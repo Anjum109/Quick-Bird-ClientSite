@@ -2,6 +2,7 @@ import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link } from 'react-router-dom';
 import AddComment from './AddComment';
+import AddReact from './AddReact';
 
 const PostDistructure = ({ post }) => {
     const { image, name, _id } = post;
@@ -24,6 +25,9 @@ const PostDistructure = ({ post }) => {
                         <button>see more</button>
                     </Link> */}
                 </div>
+            </div>
+            <div>
+                <AddReact></AddReact>
             </div>
             <div>
                 <AddComment></AddComment>
